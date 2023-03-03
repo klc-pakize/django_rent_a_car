@@ -20,10 +20,13 @@ class CarSerializer(serializers.ModelSerializer):
     #! In CarSerializers, we do not need to send the availability field to the customers in the data returned, there are two different ways for this:
     #? 1- Creating a separate serailzer for customers
     #? 2- Override the get_fields method
+    #! CarSerializers'da dönen verilerde kullanılabilirlik alanını müşterilere göndermemize gerek yoktur, bunun için iki farklı yol vardır:
+    #? 1- Müşteriler için ayrı bir serailzer oluşturmak
+    #? 2- get_fields yöntemini geçersiz kıl
 
     def get_fields(self):
 
-        fields = super().get_fields()  # We access the fields in class Meta
+        fields = super().get_fields()  # We access the fields in class Meta # Meta classındaki fields erişiyoruz
         request = self.context.get('request')
         if request.user and not request.user.is_staff:
             fields.pop('availability')
@@ -44,7 +47,7 @@ class ReservationSerializer(serializers.ModelSerializer):
         )
 
         #! I need to validate the data coming from the frontend first, because I have specified my customer, start_date and end_date fields as unique in the models section:
-
+        #! Modeller bölümünde customer, start_date ve end_date alanlarını unique olarak belirttiğim için öncelikle frontendden gelen datayı validate etmem gerekiyor:
         validators = [
             serializers.UniqueTogetherValidator(
                 queryset = Reservation.objects.all(), 

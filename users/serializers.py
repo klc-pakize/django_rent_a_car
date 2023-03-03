@@ -50,7 +50,8 @@ class RegisterSerializer(serializers.ModelSerializer):
         user.save()
         return user
     
-    
+#! We have customized the TokenSerializer so that when the user logs in, not only the key information is returned, but also personal information.
+#! TokenSerializer'ı, kullanıcı oturum açtığında yalnızca anahtar bilgilerinin değil, kişisel bilgilerinin de döndürüleceği şekilde özelleştirdik.
 class UserTokenSerializer(serializers.ModelSerializer):
     class Meta:
         model = User

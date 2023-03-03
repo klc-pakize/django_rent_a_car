@@ -15,9 +15,18 @@ class Car(models.Model):
     brand = models.CharField(max_length = 15)
     model = models.CharField(max_length = 20)
     rent_per_day = models.DecimalField(
-        max_digits = 6,  # max_digits = We specify how many digits the number will have at most.
-        decimal_places = 2,  # decimal_places = We specify the maximum number of digits after the comma.
-        validators = [MinValueValidator(50)],  # MinValueValidator = We specify the minimum number to be entered in this field, not less than the number we specified.
+
+        # max_digits = We specify how many digits the number will have at most.
+        # max_digits = Sayının en fazla kaç haneli olacağını belirtiriz.
+        max_digits = 6,  
+
+        # decimal_places = We specify the maximum number of digits after the comma.
+        # decimal_places = Virgülden sonra maksimum basamak sayısını belirtiyoruz.
+        decimal_places = 2,  
+        
+        # MinValueValidator = We specify the minimum number to be entered in this field, not less than the number we specified.
+        # MinValueValidator = Belirttiğimiz sayıdan az olmamak üzere bu alana girilecek minimum sayıyı belirtiyoruz.
+        validators = [MinValueValidator(50)],  
     )
     gear = models.CharField(max_length = 1, choices = GEAR)
     year = models.SmallIntegerField()
@@ -38,6 +47,7 @@ class Reservation(models.Model):
         return f"{self.customer} {self.car}"
     
     #! A user can only book one car on the same dates:
+    #! Bir kullanıcı aynı tarihlerde yalnızca bir araba rezervasyonu yapabilir:
 
     class Meta:
         constraints = [
