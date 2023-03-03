@@ -8,7 +8,7 @@
 - Reservation
 - User
 
-![Model]()
+![Model](https://github.com/klc-pakize/django_rent_a_car/blob/master/RentACarAppERD.png)
 
 # Customers
 
