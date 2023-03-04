@@ -1,6 +1,6 @@
 # Description
 
-<p>Is an online single page web application that enables you to manage orders and inventory with ability to get, add, edit, or delete products, firms, brands, sales, and purchases.</p>
+<p>Is an online single page web application that enables you to manage orders and inventory with ability to get, add, edit, or delete products, firms, brands, sales, and purchases.🚘</p>
 
 # Models
 
