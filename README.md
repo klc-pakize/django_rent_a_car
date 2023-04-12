@@ -32,9 +32,9 @@
 
 # Docker:
 
-1- docker pull pakizekilic/rentacar:v1
-2- docker run -d -p 8000:8000 kullanici_adi/rentacar:v1
-3- docker images
-4- docker exec -it <imaj_id> bash
-5- python manage.py createsuperuser
-6- http://localhost:8000
+<p>1- docker pull pakizekilic/rentacar:v1</p>
+<p>2- docker run -d -p 8000:8000 kullanici_adi/rentacar:v1</p>
+<p>3- docker images</p>
+<p>4- docker exec -it <imaj_id> bash</p>
+<p>5- python manage.py createsuperuser</p>
+<p>6- http://localhost:8000</p>
