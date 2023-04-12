@@ -1,6 +1,6 @@
 # Description
 
-<p>Is an online single page web application that enables you to manage orders and inventory with ability to get, add, edit, or delete products, firms, brands, sales, and purchases.</p>
+<p>Is an online single page web application that enables you to manage orders and inventory with ability to get, add, edit, or delete products, firms, brands, sales, and purchases.🚘</p>
 
 # Models
 
@@ -27,5 +27,5 @@
 
 # Live Project
 
-- <a href="https://pakize.pythonanywhere.com/">Live of the project</a>
-- <a href="https://pakize.pythonanywhere.com/swagger/">For the swagger of the project</a>
+- <a href="http://klc.pythonanywhere.com/">Live of the project</a>
+- <a href="https://klc.pythonanywhere.com/swagger/">For the swagger of the project</a>
