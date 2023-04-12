@@ -29,3 +29,12 @@
 
 - <a href="http://klc.pythonanywhere.com/">Live of the project</a>
 - <a href="https://klc.pythonanywhere.com/swagger/">For the swagger of the project</a>
+
+# Docker:
+
+1- docker pull pakizekilic/rentacar:v1
+2- docker run -d -p 8000:8000 kullanici_adi/rentacar:v1
+3- docker images
+4- docker exec -it <imaj_id> bash
+5- python manage.py createsuperuser
+6- http://localhost:8000
