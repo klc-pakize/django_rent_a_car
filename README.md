@@ -11,13 +11,13 @@
 ![Model](https://github.com/klc-pakize/django_rent_a_car/blob/master/RentACarAppERD.png)
 
 # Customers
-
-     - Başlangıç ve bitiş tarihini seçebilir ve seçilen tarihlerdeki mevcut arabaların listesini görebilir.
-     - Listeden bir araba seçip o arabayı rezerve edebilir, ancak seçilen zaman diliminde birden fazla araba rezerve edemez,
-     - Geçmiş olanlar da dahil olmak üzere rezervasyonlarının listesini görebilir.
-     - Rezervasyonları güncelleyebilir, ancak;
-         - Araç seçilen saatte başka müşteriler tarafından rezerve edilirse bitiş tarihleri uzatılamaz.
-     - Rezervasyonlarını silebilir.
+    
+    - Başlangıç ve bitiş tarihini seçebilir ve seçilen tarihlerdeki mevcut arabaların listesini görebilir.
+    - Listeden bir araba seçip o arabayı rezerve edebilir, ancak seçilen zaman diliminde birden fazla araba rezerve edemez,
+    - Geçmiş olanlar da dahil olmak üzere rezervasyonlarının listesini görebilir.
+    - Rezervasyonları güncelleyebilir, ancak;
+        - Araç seçilen saatte başka müşteriler tarafından rezerve edilirse bitiş tarihleri uzatılamaz.
+    - Rezervasyonlarını silebilir.
 
     - Can select start and end date and see the list of available cars on selected dates.
     - Can choose a car on the list and reserve that car, but can not reserve more than one car on a selected time period,
@@ -28,9 +28,9 @@
 
 # Admins
      
-     - Car tablosunda CRUD işlemlerini yapabilir,
-     - Müşteriler tablosunda CRUD işlemlerini yapabilir,
-     - Rezervasyon tablosunda CRUD işlemlerini yapabilir,
+    - Car tablosunda CRUD işlemlerini yapabilir,
+    - Müşteriler tablosunda CRUD işlemlerini yapabilir,
+    - Rezervasyon tablosunda CRUD işlemlerini yapabilir,
 
     - Can make CRUD operations on Car table,
     - Can make CRUD operations on Customers table,
