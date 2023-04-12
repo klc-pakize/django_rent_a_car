@@ -41,11 +41,12 @@ class CarView(ModelViewSet):
 
         #! Method to list cars that have no reservations between the dates entered by the user
         #! Kullanıcının girdiği tarihler arasında rezervasyonu olmayan arabaları listeleme yöntemi
-        con1 = Q(start_date__lt = end)
-        con2 = Q(end_date__gt = start)
-        not_avilable = Reservation.objects.filter(con1 & con2).values_list('car_id', flat = True)
-
-        queryset = queryset.exclude(id__in = not_avilable)
+        if start is not None and end is not None:
+            con1 = Q(start_date__lt = end)
+            con2 = Q(end_date__gt = start)
+            not_avilable = Reservation.objects.filter(con1 & con2).values_list('car_id', flat = True)
+            queryset = queryset.exclude(id__in = not_avilable)
+        
         return queryset
 
 
