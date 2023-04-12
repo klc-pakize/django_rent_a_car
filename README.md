@@ -1,6 +1,8 @@
 # Description
 
-<p>Is an online single page web application that enables you to manage orders and inventory with ability to get, add, edit, or delete products, firms, brands, sales, and purchases.🚘</p>
+<p>Müşterilerin uygun araçları inceleyerek diledikleri günlere rezervasyon yapabilecekleri, araç başka bir müşteri tarafından kiralanmamışsa rezervasyon sürecini uzatabilecekleri bir uygulama tasarlanmıştır.🚘</p>
+
+<p>An application has been designed where customers can view suitable vehicles and make reservations on the days they want, and extend the reservation process if the vehicle is not rented by another customer.🚘</p>
 
 # Models
 
